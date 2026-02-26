@@ -22,6 +22,7 @@ export const ui = {
         'hero.description': 'A decade of IT education expertise combined with a Master\'s in Computer Science and intensive Data Science training. I bridge the gap between complex data and clear, impactful decision-making.',
         'hero.cta.projects': 'View Projects',
         'hero.cta.contact': 'Get in Touch',
+        'hero.cta.cv': 'Download CV',
         'hero.available': 'Available immediately',
         'hero.location': 'Mons, Belgium',
 
@@ -90,6 +91,7 @@ export const ui = {
         'hero.description': 'Une décennie d\'expertise en enseignement informatique, complétée par un Master en Sciences Informatiques et une formation intensive en Data Science. Je fais le pont entre les données complexes et la prise de décision claire et impactante.',
         'hero.cta.projects': 'Voir les projets',
         'hero.cta.contact': 'Me contacter',
+        'hero.cta.cv': 'Télécharger CV',
         'hero.available': 'Disponible immédiatement',
         'hero.location': 'Mons, Belgique',
 
@@ -158,6 +160,7 @@ export const ui = {
         'hero.description': 'Een decennium expertise in IT-onderwijs, aangevuld met een Master in Informatica en een intensieve Data Science opleiding. Ik overbrug de kloof tussen complexe data en duidelijke, impactvolle besluitvorming.',
         'hero.cta.projects': 'Projecten bekijken',
         'hero.cta.contact': 'Neem contact op',
+        'hero.cta.cv': 'CV downloaden',
         'hero.available': 'Direct beschikbaar',
         'hero.location': 'Bergen, België',
 
