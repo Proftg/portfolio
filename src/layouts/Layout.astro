@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/translations';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Tahar Guenfoud — Data Analyst & Data Scientist', description = 'Portfolio of Tahar Guenfoud — Data Analyst & Data Scientist based in Belgium. Transforming data into actionable insights.' } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <meta name="author" content="Tahar Guenfoud" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
+  <title>{title}</title>
+</head>
+<body>
+  <Navbar />
+  <main>
+    <slot />
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© {new Date().getFullYear()} Tahar Guenfoud. {t('footer.rights')} · {t('footer.built')}</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.querySelector('.mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+
+    // Scroll animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

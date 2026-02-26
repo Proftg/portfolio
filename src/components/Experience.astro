@@ -1,0 +1,116 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/translations';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+interface TimelineEntry {
+  date: string;
+  title: string;
+  org: string;
+  description: string;
+}
+
+const timeline: Record<string, TimelineEntry[]> = {
+  en: [
+    {
+      date: '2025',
+      title: 'Data Science & AI Bootcamp — 400h+',
+      org: 'Le Wagon',
+      description: 'Machine Learning, Deep Learning, Data Engineering, MLOps. Final team project with end-to-end deployment.',
+    },
+    {
+      date: '2025',
+      title: 'Master in Computer Science',
+      org: 'UMONS — University of Mons',
+      description: 'Advanced studies in algorithms, databases, and software engineering.',
+    },
+    {
+      date: '2016 — Present',
+      title: 'Computer Science Teacher',
+      org: 'Fédération Wallonie-Bruxelles Enseignement · Mons',
+      description: 'Teaching Python, SQL, and databases to 100+ students/year. Systematic analysis of performance data to adapt pedagogical strategies. Developed automated correction and reporting tools.',
+    },
+    {
+      date: '2014 — 2015',
+      title: 'Independent IT Consultant',
+      org: 'E-zzy · Belgium',
+      description: 'Needs analysis, network architecture, and IT infrastructure deployment for SMEs. User training and technical support.',
+    },
+  ],
+  fr: [
+    {
+      date: '2025',
+      title: 'Bootcamp Data Science & IA — 400h+',
+      org: 'Le Wagon',
+      description: 'Machine Learning, Deep Learning, Data Engineering, MLOps. Projet final en équipe avec déploiement de bout en bout.',
+    },
+    {
+      date: '2025',
+      title: 'Master en Sciences Informatiques',
+      org: 'UMONS — Université de Mons',
+      description: 'Études avancées en algorithmique, bases de données et génie logiciel.',
+    },
+    {
+      date: '2016 — Présent',
+      title: 'Professeur d\'Informatique',
+      org: 'Fédération Wallonie-Bruxelles Enseignement · Mons',
+      description: 'Enseignement de Python, SQL et bases de données à 100+ élèves/an. Analyse systématique des données de performance pour adapter les stratégies pédagogiques.',
+    },
+    {
+      date: '2014 — 2015',
+      title: 'Consultant IT Indépendant',
+      org: 'E-zzy · Belgique',
+      description: 'Analyse des besoins, architecture réseau et déploiement d\'infrastructure IT pour PME. Formation et support technique.',
+    },
+  ],
+  nl: [
+    {
+      date: '2025',
+      title: 'Data Science & AI Bootcamp — 400+ uur',
+      org: 'Le Wagon',
+      description: 'Machine Learning, Deep Learning, Data Engineering, MLOps. Eindteamproject met volledige deployment.',
+    },
+    {
+      date: '2025',
+      title: 'Master Informatica',
+      org: 'UMONS — Universiteit van Bergen',
+      description: 'Geavanceerde studies in algoritmen, databases en software engineering.',
+    },
+    {
+      date: '2016 — Heden',
+      title: 'Informaticaleerkracht',
+      org: 'Fédération Wallonie-Bruxelles Onderwijs · Bergen',
+      description: 'Lesgeven in Python, SQL en databases aan 100+ studenten/jaar. Systematische analyse van prestatiegegevens om pedagogische strategieën aan te passen.',
+    },
+    {
+      date: '2014 — 2015',
+      title: 'Zelfstandig IT Consultant',
+      org: 'E-zzy · België',
+      description: 'Behoefteanalyse, netwerkarchitectuur en IT-infrastructuur deployment voor KMO\'s.',
+    },
+  ],
+};
+
+const currentTimeline = timeline[lang] || timeline.en;
+---
+
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">{t('experience.title')}</h2>
+    </div>
+
+    <div class="timeline">
+      {currentTimeline.map((item, i) => (
+        <div class="timeline-item animate-on-scroll" style={`transition-delay: ${i * 150}ms`}>
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">{item.date}</span>
+          <h3 class="timeline-title">{item.title}</h3>
+          <p class="timeline-org">{item.org}</p>
+          <p class="timeline-description">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

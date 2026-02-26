@@ -1,0 +1,26 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/translations';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const figures = [
+  { value: t('figures.lines.value'), label: t('figures.lines') },
+  { value: t('figures.experience.value'), label: t('figures.experience') },
+  { value: t('figures.training.value'), label: t('figures.training') },
+  { value: t('figures.students.value'), label: t('figures.students') },
+];
+---
+
+<section class="section">
+  <div class="container">
+    <div class="figures">
+      {figures.map((fig, i) => (
+        <div class="figure-card animate-on-scroll" style={`transition-delay: ${i * 100}ms`}>
+          <div class="figure-value">{fig.value}</div>
+          <div class="figure-label">{fig.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

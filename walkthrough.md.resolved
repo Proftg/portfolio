@@ -1,0 +1,84 @@
+# Portfolio Data Science — Walkthrough
+
+## Ce qui a été construit
+
+Un portfolio professionnel **Astro** pour Tahar Guenfoud, avec support multilingue (EN/FR/NL), hébergeable gratuitement sur **GitHub Pages**.
+
+### Aperçu visuel
+
+````carousel
+![Hero section — Dark theme avec gradient violet, badge "Available immediately", initiales TG design](/home/tahar/.gemini/antigravity/brain/f73635ff-f9d1-458f-9ca0-a4c6511fb419/hero_section_tg_initials_1772036150808.png)
+<!-- slide -->
+![Projects — Bank Customer Churn et Le Wagon mis en évidence avec tags tech et liens](/home/tahar/.gemini/antigravity/brain/f73635ff-f9d1-458f-9ca0-a4c6511fb419/key_figures_and_projects_1772033604888.png)
+<!-- slide -->
+![Skills & Experience — Grille de compétences et timeline du parcours professionnel](/home/tahar/.gemini/antigravity/brain/f73635ff-f9d1-458f-9ca0-a4c6511fb419/skills_and_experience_1772033816748.png)
+<!-- slide -->
+![Contact & Footer — Liens email, LinkedIn, GitHub avec hover animations](/home/tahar/.gemini/antigravity/brain/f73635ff-f9d1-458f-9ca0-a4c6511fb419/footer_and_contact_1772034053240.png)
+````
+
+### Demo du language switching (EN → FR → NL)
+
+![Démonstration du switch de langue entre EN, FR et NL](/home/tahar/.gemini/antigravity/brain/f73635ff-f9d1-458f-9ca0-a4c6511fb419/i18n_routing_test_1772034430740.webp)
+
+---
+
+## Structure du projet
+
+```
+portfolio/
+├── src/
+│   ├── components/      ← 7 composants Astro
+│   ├── i18n/            ← Traductions EN/FR/NL (75+ clés)
+│   ├── layouts/         ← Layout principal + SEO
+│   ├── pages/           ← EN (index), FR, NL
+│   └── styles/          ← Design system complet
+├── public/
+│   ├── images/          ← Dossier pour vos images (photo, projets)
+│   └── favicon.svg      ← Favicon TG gradient
+├── astro.config.mjs     ← Config i18n + GitHub Pages
+└── package.json
+```
+
+## Fonctionnalités implémentées
+
+| Feature | Status |
+|---------|--------|
+| Dark mode professionnel (bleu-violet) | ✅ |
+| Animations au scroll (fade-in) | ✅ |
+| i18n EN / FR / NL | ✅ |
+| Language switcher dans la navbar | ✅ |
+| 6 projets (bank-related en featured) | ✅ |
+| Photo placeholder (easy to add) | ✅ |
+| Responsive (mobile/tablet/desktop) | ✅ |
+| SEO (meta tags, semantic HTML) | ✅ |
+| SVG Favicon | ✅ |
+
+## Comment mettre à jour
+
+### Ajouter votre photo
+Placez votre photo dans `public/images/photo.jpg`, puis dans [Hero.astro](file:///home/tahar/Code/job-search/portfolio/src/components/Hero.astro) :
+- Décommentez la ligne `<img>` 
+- Supprimez le `<div class="hero-photo-placeholder">`
+
+### Modifier les projets
+Éditez directement le fichier [Projects.astro](file:///home/tahar/Code/job-search/portfolio/src/components/Projects.astro) — les projets sont définis comme un objet JavaScript par langue. Ajoutez un nouveau projet en copiant un bloc existant.
+
+### Modifier les traductions
+Toutes les traductions sont dans [translations.ts](file:///home/tahar/Code/job-search/portfolio/src/i18n/translations.ts).
+
+## Déploiement sur GitHub Pages
+
+1. Créez un repo `portfolio` sur GitHub
+2. Ajoutez un fichier `.github/workflows/deploy.yml` pour le déploiement automatique
+3. Activez GitHub Pages dans les paramètres du repo
+
+> [!TIP]
+> Le site est configuré pour `https://proftg.github.io/portfolio`. Si vous changez le nom du repo, mettez à jour `base` et `site` dans [astro.config.mjs](file:///home/tahar/Code/job-search/portfolio/astro.config.mjs).
+
+## Lancer en local
+
+```bash
+cd /home/tahar/Code/job-search/portfolio
+npm run dev
+# → http://localhost:4321/portfolio
+```

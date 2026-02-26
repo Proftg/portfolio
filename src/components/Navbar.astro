@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl, useTranslations, getLocalizedPath, languages } from '../i18n/translations';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<nav class="navbar">
+  <div class="container">
+    <a href={getLocalizedPath(lang, '/portfolio/')} class="nav-logo">TG</a>
+
+    <ul class="nav-links">
+      <li><a href={getLocalizedPath(lang, '/portfolio/')} class="nav-link">{t('nav.home')}</a></li>
+      <li><a href={getLocalizedPath(lang, '/portfolio/#projects')} class="nav-link">{t('nav.projects')}</a></li>
+      <li><a href={getLocalizedPath(lang, '/portfolio/#skills')} class="nav-link">{t('nav.about')}</a></li>
+      <li><a href={getLocalizedPath(lang, '/portfolio/#contact')} class="nav-link">{t('nav.contact')}</a></li>
+      <li>
+        <div class="lang-switcher">
+          {Object.entries(languages).map(([code, _name]) => (
+            <a
+              href={code === 'en' ? '/portfolio/' : `/portfolio/${code}/`}
+              class={`lang-btn ${lang === code ? 'active' : ''}`}
+            >
+              {code}
+            </a>
+          ))}
+        </div>
+      </li>
+    </ul>
+
+    <button class="mobile-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>

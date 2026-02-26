@@ -1,0 +1,53 @@
+---
+import { getLangFromUrl, useTranslations, getLocalizedPath } from '../i18n/translations';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          {t('hero.available')}
+        </div>
+        <p class="hero-greeting">{t('hero.greeting')}</p>
+        <h1 class="hero-name">
+          <span class="hero-name-gradient">{t('hero.name')}</span>
+        </h1>
+        <p class="hero-title">{t('hero.title')}</p>
+        <p class="hero-description">{t('hero.description')}</p>
+        <div class="hero-ctas">
+          <a href={getLocalizedPath(lang, '/portfolio/#projects')} class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+            {t('hero.cta.projects')}
+          </a>
+          <a href={getLocalizedPath(lang, '/portfolio/#contact')} class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            {t('hero.cta.contact')}
+          </a>
+        </div>
+        <div class="hero-location">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          {t('hero.location')}
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo-wrapper">
+          <!--
+            📸 TO ADD YOUR PHOTO:
+            1. Save your photo as: public/images/photo.jpg
+            2. Uncomment the <img> tag below
+            3. Delete or comment the <div class="hero-initials"> block
+          -->
+          <!-- <img src="/portfolio/images/photo.jpg" alt="Tahar Guenfoud" class="hero-photo" /> -->
+          <div class="hero-initials">
+            <span>TG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

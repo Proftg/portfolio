@@ -1,0 +1,53 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/translations';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const skillCategories = [
+  {
+    titleKey: 'skills.languages' as const,
+    icon: '💻',
+    skills: ['Python', 'SQL', 'Pandas', 'NumPy', 'Git', 'Docker'],
+  },
+  {
+    titleKey: 'skills.ml' as const,
+    icon: '🤖',
+    skills: ['Scikit-learn', 'Classification', 'Regression', 'Clustering', 'NLP', 'Feature Engineering'],
+  },
+  {
+    titleKey: 'skills.viz' as const,
+    icon: '📊',
+    skills: ['Power BI', 'Tableau', 'Streamlit', 'Plotly', 'Seaborn', 'Matplotlib'],
+  },
+  {
+    titleKey: 'skills.cloud' as const,
+    icon: '☁️',
+    skills: ['Azure', 'ETL', 'CI/CD', 'Docker', 'REST APIs', 'MLOps'],
+  },
+];
+---
+
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">{t('skills.title')}</h2>
+    </div>
+
+    <div class="skills-categories">
+      {skillCategories.map((cat, i) => (
+        <div class="skill-category animate-on-scroll" style={`transition-delay: ${i * 100}ms`}>
+          <h3 class="skill-category-title">
+            <span class="skill-category-icon">{cat.icon}</span>
+            {t(cat.titleKey)}
+          </h3>
+          <div class="skills-list">
+            {cat.skills.map((skill) => (
+              <span class="skill-item">{skill}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
