@@ -33,7 +33,7 @@ export const ui = {
         'figures.training': 'Hours Data Science Training',
         'figures.training.value': '400+',
         'figures.students': 'Students Trained/Year',
-        'figures.students.value': '100+',
+        'figures.students.value': '200+',
 
         // Projects
         'projects.title': 'Featured Projects',
@@ -101,7 +101,7 @@ export const ui = {
         'figures.training': 'Heures de formation Data Science',
         'figures.training.value': '400+',
         'figures.students': 'Élèves formés/an',
-        'figures.students.value': '100+',
+        'figures.students.value': '200+',
 
         // Projects
         'projects.title': 'Projets phares',
@@ -169,7 +169,7 @@ export const ui = {
         'figures.training': 'Uren Data Science training',
         'figures.training.value': '400+',
         'figures.students': 'Studenten opgeleid/jaar',
-        'figures.students.value': '100+',
+        'figures.students.value': '200+',
 
         // Projects
         'projects.title': 'Uitgelichte projecten',
