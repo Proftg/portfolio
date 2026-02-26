@@ -57,11 +57,11 @@ export const ui = {
         'about.title': 'About Me',
         'about.bio': 'When I\'m not crunching data, you\'ll find me training for my next triathlon 🏊🚴🏃. I believe that the discipline and analytical thinking required in sports directly translates to my approach in data science.',
         'about.languages': 'Languages',
-        'about.languages.fr': 'French — Native',
+        'about.languages.ar': 'Arabic — Native',
+        'about.languages.fr': 'French — Bilingual',
         'about.languages.en': 'English — Fluent',
-        'about.languages.ar': 'Arabic — Proficient',
-        'about.languages.ru': 'Russian — Proficient',
-        'about.languages.nl': 'Dutch — Learning (B1)',
+        'about.languages.ru': 'Russian — Intermediate',
+        'about.languages.nl': 'Dutch — Basic',
 
         // Contact
         'contact.title': 'Let\'s Connect',
@@ -125,11 +125,11 @@ export const ui = {
         'about.title': 'À propos',
         'about.bio': 'Quand je ne suis pas plongé dans les données, vous me trouverez en train de m\'entraîner pour mon prochain triathlon 🏊🚴🏃. Je crois que la discipline et la pensée analytique requises dans le sport se traduisent directement dans mon approche en data science.',
         'about.languages': 'Langues',
-        'about.languages.fr': 'Français — Langue maternelle',
+        'about.languages.ar': 'Arabe — Langue maternelle',
+        'about.languages.fr': 'Français — Bilingue',
         'about.languages.en': 'Anglais — Courant',
-        'about.languages.ar': 'Arabe — Maîtrisé',
-        'about.languages.ru': 'Russe — Maîtrisé',
-        'about.languages.nl': 'Néerlandais — En cours (B1)',
+        'about.languages.ru': 'Russe — Intermédiaire',
+        'about.languages.nl': 'Néerlandais — Notions de base',
 
         // Contact
         'contact.title': 'Contactez-moi',
@@ -193,11 +193,11 @@ export const ui = {
         'about.title': 'Over mij',
         'about.bio': 'Als ik niet met data bezig ben, train ik voor mijn volgende triatlon 🏊🚴🏃. Ik geloof dat de discipline en het analytisch denken die nodig zijn in sport zich direct vertalen naar mijn aanpak in data science.',
         'about.languages': 'Talen',
-        'about.languages.fr': 'Frans — Moedertaal',
+        'about.languages.ar': 'Arabisch — Moedertaal',
+        'about.languages.fr': 'Frans — Tweetalig',
         'about.languages.en': 'Engels — Vloeiend',
-        'about.languages.ar': 'Arabisch — Gevorderd',
-        'about.languages.ru': 'Russisch — Gevorderd',
-        'about.languages.nl': 'Nederlands — Lerend (B1)',
+        'about.languages.ru': 'Russisch — Gemiddeld',
+        'about.languages.nl': 'Nederlands — Basiskennis',
 
         // Contact
         'contact.title': 'Neem contact op',
