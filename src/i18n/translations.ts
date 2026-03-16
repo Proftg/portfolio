@@ -28,7 +28,7 @@ export const ui = {
 
         // Key figures
         'figures.lines': 'Lines Analyzed',
-        'figures.lines.value': '10K+',
+        'figures.lines.value': '22M+',
         'figures.experience': 'Years Technical Expertise',
         'figures.experience.value': '10',
         'figures.training': 'Hours Data Science Training',
@@ -97,7 +97,7 @@ export const ui = {
 
         // Key figures
         'figures.lines': 'Lignes analysées',
-        'figures.lines.value': '10K+',
+        'figures.lines.value': '22M+',
         'figures.experience': 'Ans d\'expertise technique',
         'figures.experience.value': '10',
         'figures.training': 'Heures de formation Data Science',
@@ -166,7 +166,7 @@ export const ui = {
 
         // Key figures
         'figures.lines': 'Geanalyseerde regels',
-        'figures.lines.value': '10K+',
+        'figures.lines.value': '22M+',
         'figures.experience': 'Jaar technische expertise',
         'figures.experience.value': '10',
         'figures.training': 'Uren Data Science training',
