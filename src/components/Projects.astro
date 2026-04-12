@@ -17,10 +17,17 @@ const projects: Record<string, Project[]> = {
   en: [
     {
       title: 'Blackspots — Railway Delay Cartography',
-      description: 'Geospatial analysis of 22.6 million train records from Infrabel (Belgian railway infrastructure). Interactive Folium heatmap identifying delay hotspots across the Belgian network. Monthly trend analysis with Plotly, Streamlit dashboard, and data pipeline reducing 5 GB to 1.1 GB via categorical optimization.',
+      description: 'Geospatial analysis of 19.7 million train records from Infrabel Open Data (Jan 2025 – Feb 2026). Interactive Folium heatmap identifying delay hotspots across 500 Belgian stations. Monthly trend analysis with Plotly, Streamlit dashboard, and optimized Parquet data pipeline.',
       tags: ['Python', 'Pandas', 'Folium', 'Plotly', 'Streamlit', 'Geospatial'],
       github: 'https://github.com/Proftg/blackspots-infrabel',
       live: 'https://blackspots-infrabel.streamlit.app/',
+      featured: true,
+    },
+    {
+      title: 'Railway Delay ML — Predictive Modeling',
+      description: 'End-to-end ML pipeline on 19.7M Infrabel Open Data records. Geographic clustering (DBSCAN haversine, 28 basins), anomaly detection (Isolation Forest, 50 stations), temporal decomposition (STL weekly), and multi-model comparison (XGBoost · GradientBoosting · RandomForest · Stacking). 5-Fold CV with sklearn Pipeline — no data leakage. AUC=0.813 · MAE=0.275 min (cross-validated).',
+      tags: ['Python', 'XGBoost', 'Scikit-learn', 'DBSCAN', 'Isolation Forest', 'STL', 'Cross-Validation'],
+      github: 'https://github.com/Proftg/railway-delay-ml',
       featured: true,
     },
     {
@@ -70,10 +77,17 @@ const projects: Record<string, Project[]> = {
   fr: [
     {
       title: 'Blackspots — Cartographie des Retards Ferroviaires',
-      description: 'Analyse géospatiale de 22,6 millions d\'enregistrements ferroviaires Infrabel. Heatmap Folium interactive identifiant les points chauds de retards sur le réseau belge. Analyse de tendance mensuelle avec Plotly, dashboard Streamlit, et pipeline de données réduisant 5 Go à 1,1 Go via optimisation catégorielle.',
+      description: 'Analyse géospatiale de 19,7 millions d\'enregistrements Open Data Infrabel (jan 2025 – fév 2026). Heatmap Folium interactive identifiant les points chauds de retards sur 500 gares belges. Analyse de tendance mensuelle avec Plotly, dashboard Streamlit et pipeline Parquet optimisé.',
       tags: ['Python', 'Pandas', 'Folium', 'Plotly', 'Streamlit', 'Géospatial'],
       github: 'https://github.com/Proftg/blackspots-infrabel',
       live: 'https://blackspots-infrabel.streamlit.app/',
+      featured: true,
+    },
+    {
+      title: 'Railway Delay ML — Modélisation Prédictive',
+      description: 'Pipeline ML complet sur 19,7M d\'enregistrements Open Data Infrabel. Clustering géographique (DBSCAN haversine, 28 bassins), détection d\'anomalies (Isolation Forest, 50 gares), décomposition temporelle (STL hebdomadaire), comparaison multi-modèles (XGBoost · GradientBoosting · RandomForest · Stacking). Validation croisée 5 folds avec Pipeline sklearn — sans data leakage. AUC=0.813 · MAE=0.275 min (cross-validé).',
+      tags: ['Python', 'XGBoost', 'Scikit-learn', 'DBSCAN', 'Isolation Forest', 'STL', 'Validation Croisée'],
+      github: 'https://github.com/Proftg/railway-delay-ml',
       featured: true,
     },
     {
@@ -123,10 +137,17 @@ const projects: Record<string, Project[]> = {
   nl: [
     {
       title: 'Blackspots — Spoorwegvertraging Cartografie',
-      description: 'Geospatiale analyse van 22,6 miljoen treinrecords van Infrabel. Interactieve Folium heatmap die vertragingshotspots in het Belgische netwerk identificeert. Maandelijkse trendanalyse met Plotly, Streamlit dashboard, en datapijplijn die 5 GB reduceert tot 1,1 GB via categorische optimalisatie.',
+      description: 'Geospatiale analyse van 19,7 miljoen Infrabel Open Data records (jan 2025 – feb 2026). Interactieve Folium heatmap die vertragingshotspots in 500 Belgische stations identificeert. Maandelijkse trendanalyse met Plotly, Streamlit dashboard en geoptimaliseerde Parquet pipeline.',
       tags: ['Python', 'Pandas', 'Folium', 'Plotly', 'Streamlit', 'Geospatial'],
       github: 'https://github.com/Proftg/blackspots-infrabel',
       live: 'https://blackspots-infrabel.streamlit.app/',
+      featured: true,
+    },
+    {
+      title: 'Railway Delay ML — Voorspellende Modellering',
+      description: 'End-to-end ML-pipeline op 19,7M Infrabel Open Data records. Geografische clustering (DBSCAN haversine, 28 bassins), anomaliedetectie (Isolation Forest, 50 stations), temporele decompositie (STL wekelijks), multi-model vergelijking (XGBoost · GradientBoosting · RandomForest · Stacking). 5-voudige kruisvalidatie met sklearn Pipeline — geen data leakage. AUC=0,813 · MAE=0,275 min (kruisgevalideerd).',
+      tags: ['Python', 'XGBoost', 'Scikit-learn', 'DBSCAN', 'Isolation Forest', 'STL', 'Kruisvalidatie'],
+      github: 'https://github.com/Proftg/railway-delay-ml',
       featured: true,
     },
     {
