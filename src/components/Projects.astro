@@ -16,7 +16,7 @@ interface Project {
 const projects: Record<string, Project[]> = {
   en: [
     {
-      title: 'Blackspots — Railway Delay Cartography',
+      title: 'Blackspots : Railway Delay Cartography',
       description: 'Geospatial analysis of 19.7 million train records from Infrabel Open Data (Jan 2025 – Feb 2026). Interactive Folium heatmap identifying delay hotspots across 500 Belgian stations. Monthly trend analysis with Plotly, Streamlit dashboard, and optimized Parquet data pipeline.',
       tags: ['Python', 'Pandas', 'Folium', 'Plotly', 'Streamlit', 'Geospatial'],
       github: 'https://github.com/Proftg/blackspots-infrabel',
@@ -24,14 +24,14 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'Railway Delay ML — Predictive Modeling',
-      description: 'End-to-end ML pipeline on 19.7M Infrabel Open Data records. Geographic clustering (DBSCAN haversine, 28 basins), anomaly detection (Isolation Forest, 50 stations), temporal decomposition (STL weekly), and multi-model comparison (XGBoost · GradientBoosting · RandomForest · Stacking). 5-Fold CV with sklearn Pipeline — no data leakage. AUC=0.813 · MAE=0.275 min (cross-validated).',
+      title: 'Railway Delay ML : Predictive Modeling',
+      description: 'End-to-end ML pipeline on 19.7M Infrabel Open Data records. Geographic clustering (DBSCAN haversine, 28 basins), anomaly detection (Isolation Forest, 50 stations), temporal decomposition (STL weekly), and multi-model comparison (XGBoost · GradientBoosting · RandomForest · Stacking). 5-Fold CV with sklearn Pipeline, no data leakage. AUC=0.813 · MAE=0.275 min (cross-validated).',
       tags: ['Python', 'XGBoost', 'Scikit-learn', 'DBSCAN', 'Isolation Forest', 'STL', 'Cross-Validation'],
       github: 'https://github.com/Proftg/railway-delay-ml',
       featured: true,
     },
     {
-      title: 'Infrabel Dashboard — KPI Qualité Réseau',
+      title: 'Infrabel Dashboard : KPI Qualité Réseau',
       description: 'Dashboard interactif de ponctualité et fiabilité du réseau ferroviaire belge. 5 datasets Open Data Infrabel (ponctualité par gare, causes des retards, trains supprimés, Contrat de Performance). Notebook ETL/EDA complet + Streamlit + Power BI.',
       tags: ['Python', 'Pandas', 'Plotly', 'Streamlit', 'Power BI', 'Open Data'],
       github: 'https://github.com/Proftg/infrabel-dashboard',
@@ -47,7 +47,7 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'MacroDash — Belgian Macroeconomic Dashboard',
+      title: 'MacroDash : Belgian Macroeconomic Dashboard',
       description: 'Interactive macroeconomic dashboard for Belgium built on the Eurostat API. 6 series: OLO 10Y sovereign bonds, EURIBOR 3M, HICP Inflation, Unemployment, GDP, House Price Index (%YoY). Full data pipeline: custom EurostatClient with JSON-stat parsing, DuckDB persistence, Streamlit + Plotly. Central narrative: ECB 2022-2024 rate cycle and its transmission across Belgian indicators. Correlations confirmed: OLO x EURIBOR r=+0.73, rates x GDP r=-0.83, Okun law r=-0.75.',
       tags: ['Python', 'Pandas', 'Plotly', 'Streamlit', 'DuckDB', 'Eurostat API', 'Macroeconomics'],
       github: 'https://github.com/Proftg/macrodash-nbb',
@@ -62,7 +62,7 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'Maven Music — Churn Analysis',
+      title: 'Maven Music : Churn Analysis',
       description: 'Customer churn analysis for a music streaming platform. Reduction of customer attrition via behavioral analysis of 10,000+ users. Deployed interactive Streamlit dashboard accessible online.',
       tags: ['Python', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Streamlit'],
       github: 'https://github.com/Proftg/maven_music_streamlit-app',
@@ -76,7 +76,7 @@ const projects: Record<string, Project[]> = {
       github: 'https://github.com/Proftg/Bank-Customer-Data-Prep',
     },
     {
-      title: 'Le Wagon — Board Game Popularity Analysis',
+      title: 'Le Wagon : Board Game Popularity Analysis',
       description: 'Capstone project for Le Wagon Data Science & AI bootcamp (400h+). Predictive modeling of board game popularity from 20,000+ BGG records enriched via REST API. Feature engineering, cross-validation, and Streamlit dashboard deployment.',
       tags: ['Python', 'Scikit-learn', 'NumPy', 'Seaborn', 'API REST', 'Streamlit'],
       github: 'https://github.com/Proftg/BGG-Project---Board-Game-Analysis',
@@ -84,7 +84,7 @@ const projects: Record<string, Project[]> = {
   ],
   fr: [
     {
-      title: 'Blackspots — Cartographie des Retards Ferroviaires',
+      title: 'Blackspots : Cartographie des Retards Ferroviaires',
       description: 'Analyse géospatiale de 19,7 millions d\'enregistrements Open Data Infrabel (jan 2025 – fév 2026). Heatmap Folium interactive identifiant les points chauds de retards sur 500 gares belges. Analyse de tendance mensuelle avec Plotly, dashboard Streamlit et pipeline Parquet optimisé.',
       tags: ['Python', 'Pandas', 'Folium', 'Plotly', 'Streamlit', 'Géospatial'],
       github: 'https://github.com/Proftg/blackspots-infrabel',
@@ -92,14 +92,14 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'Railway Delay ML — Modélisation Prédictive',
-      description: 'Pipeline ML complet sur 19,7M d\'enregistrements Open Data Infrabel. Clustering géographique (DBSCAN haversine, 28 bassins), détection d\'anomalies (Isolation Forest, 50 gares), décomposition temporelle (STL hebdomadaire), comparaison multi-modèles (XGBoost · GradientBoosting · RandomForest · Stacking). Validation croisée 5 folds avec Pipeline sklearn — sans data leakage. AUC=0.813 · MAE=0.275 min (cross-validé).',
+      title: 'Railway Delay ML : Modélisation Prédictive',
+      description: 'Pipeline ML complet sur 19,7M d\'enregistrements Open Data Infrabel. Clustering géographique (DBSCAN haversine, 28 bassins), détection d\'anomalies (Isolation Forest, 50 gares), décomposition temporelle (STL hebdomadaire), comparaison multi-modèles (XGBoost · GradientBoosting · RandomForest · Stacking). Validation croisée 5 folds avec Pipeline sklearn, sans data leakage. AUC=0.813 · MAE=0.275 min (cross-validé).',
       tags: ['Python', 'XGBoost', 'Scikit-learn', 'DBSCAN', 'Isolation Forest', 'STL', 'Validation Croisée'],
       github: 'https://github.com/Proftg/railway-delay-ml',
       featured: true,
     },
     {
-      title: 'Infrabel Dashboard — KPI Qualité Réseau',
+      title: 'Infrabel Dashboard : KPI Qualité Réseau',
       description: 'Dashboard interactif de ponctualité et fiabilité du réseau ferroviaire belge. 5 datasets Open Data Infrabel (ponctualité par gare, causes des retards, trains supprimés, Contrat de Performance). Notebook ETL/EDA complet + Streamlit + Power BI.',
       tags: ['Python', 'Pandas', 'Plotly', 'Streamlit', 'Power BI', 'Open Data'],
       github: 'https://github.com/Proftg/infrabel-dashboard',
@@ -115,7 +115,7 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'MacroDash — Dashboard Macroéconomique Belge',
+      title: 'MacroDash : Dashboard Macroéconomique Belge',
       description: 'Dashboard macroéconomique interactif pour la Belgique, construit sur l\'API Eurostat. 6 séries : OLO 10 ans, EURIBOR 3M, Inflation IPCH, Chômage, PIB, Prix Immobiliers (%YoY). Pipeline complet : EurostatClient (parsing JSON-stat), persistance DuckDB, Streamlit + Plotly. Narrative centrale : cycle BCE 2022-2024 et transmission sur les indicateurs belges. Corrélations mesurées : OLO x EURIBOR r=+0,73, taux x PIB r=-0,83, loi d\'Okun r=-0,75.',
       tags: ['Python', 'Pandas', 'Plotly', 'Streamlit', 'DuckDB', 'API Eurostat', 'Macroéconomie'],
       github: 'https://github.com/Proftg/macrodash-nbb',
@@ -130,7 +130,7 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'Maven Music — Analyse de Churn',
+      title: 'Maven Music : Analyse de Churn',
       description: 'Analyse d\'attrition client pour une plateforme de streaming musical. Réduction de l\'attrition via l\'analyse comportementale de 10 000+ utilisateurs. Dashboard interactif Streamlit déployé en ligne.',
       tags: ['Python', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Streamlit'],
       github: 'https://github.com/Proftg/maven_music_streamlit-app',
@@ -144,7 +144,7 @@ const projects: Record<string, Project[]> = {
       github: 'https://github.com/Proftg/Bank-Customer-Data-Prep',
     },
     {
-      title: 'Le Wagon — Analyse de Popularité des Jeux de Société',
+      title: 'Le Wagon : Analyse de Popularité des Jeux de Société',
       description: 'Projet de fin de formation Le Wagon Data Science & AI (400h+). Modélisation prédictive de la popularité de jeux de société à partir de 20 000+ records BGG enrichis via API REST. Feature engineering, validation croisée et déploiement Streamlit.',
       tags: ['Python', 'Scikit-learn', 'NumPy', 'Seaborn', 'API REST', 'Streamlit'],
       github: 'https://github.com/Proftg/BGG-Project---Board-Game-Analysis',
@@ -152,7 +152,7 @@ const projects: Record<string, Project[]> = {
   ],
   nl: [
     {
-      title: 'Blackspots — Spoorwegvertraging Cartografie',
+      title: 'Blackspots : Spoorwegvertraging Cartografie',
       description: 'Geospatiale analyse van 19,7 miljoen Infrabel Open Data records (jan 2025 – feb 2026). Interactieve Folium heatmap die vertragingshotspots in 500 Belgische stations identificeert. Maandelijkse trendanalyse met Plotly, Streamlit dashboard en geoptimaliseerde Parquet pipeline.',
       tags: ['Python', 'Pandas', 'Folium', 'Plotly', 'Streamlit', 'Geospatial'],
       github: 'https://github.com/Proftg/blackspots-infrabel',
@@ -160,14 +160,14 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'Railway Delay ML — Voorspellende Modellering',
-      description: 'End-to-end ML-pipeline op 19,7M Infrabel Open Data records. Geografische clustering (DBSCAN haversine, 28 bassins), anomaliedetectie (Isolation Forest, 50 stations), temporele decompositie (STL wekelijks), multi-model vergelijking (XGBoost · GradientBoosting · RandomForest · Stacking). 5-voudige kruisvalidatie met sklearn Pipeline — geen data leakage. AUC=0,813 · MAE=0,275 min (kruisgevalideerd).',
+      title: 'Railway Delay ML : Voorspellende Modellering',
+      description: 'End-to-end ML-pipeline op 19,7M Infrabel Open Data records. Geografische clustering (DBSCAN haversine, 28 bassins), anomaliedetectie (Isolation Forest, 50 stations), temporele decompositie (STL wekelijks), multi-model vergelijking (XGBoost · GradientBoosting · RandomForest · Stacking). 5-voudige kruisvalidatie met sklearn Pipeline, geen data leakage. AUC=0,813 · MAE=0,275 min (kruisgevalideerd).',
       tags: ['Python', 'XGBoost', 'Scikit-learn', 'DBSCAN', 'Isolation Forest', 'STL', 'Kruisvalidatie'],
       github: 'https://github.com/Proftg/railway-delay-ml',
       featured: true,
     },
     {
-      title: 'Infrabel Dashboard — KPI Netwerkkwaliteit',
+      title: 'Infrabel Dashboard : KPI Netwerkkwaliteit',
       description: 'Interactief dashboard voor stiptheid en betrouwbaarheid van het Belgische spoornetwerk. 5 Open Data Infrabel datasets (stiptheid per station, vertragingsoorzaken, geschrapted treinen, Prestatiecontract). Volledige ETL/EDA notebook + Streamlit + Power BI.',
       tags: ['Python', 'Pandas', 'Plotly', 'Streamlit', 'Power BI', 'Open Data'],
       github: 'https://github.com/Proftg/infrabel-dashboard',
@@ -183,7 +183,7 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'MacroDash — Belgisch Macro-economisch Dashboard',
+      title: 'MacroDash : Belgisch Macro-economisch Dashboard',
       description: 'Interactief macro-economisch dashboard voor België op basis van de Eurostat API. 6 reeksen: OLO 10Y, EURIBOR 3M, HICP Inflatie, Werkloosheid, BBP, Huizenprijsindex (%YoY). Volledige datapijplijn: EurostatClient (JSON-stat parser), DuckDB persistentie, Streamlit + Plotly. Centrale narratief: ECB 2022-2024 rentecyclus en transmissie naar Belgische indicatoren. Correlaties bevestigd: OLO x EURIBOR r=+0,73, rente x BBP r=-0,83, Okun wet r=-0,75.',
       tags: ['Python', 'Pandas', 'Plotly', 'Streamlit', 'DuckDB', 'Eurostat API', 'Macro-economie'],
       github: 'https://github.com/Proftg/macrodash-nbb',
@@ -198,7 +198,7 @@ const projects: Record<string, Project[]> = {
       featured: true,
     },
     {
-      title: 'Maven Music — Churn Analyse',
+      title: 'Maven Music : Churn Analyse',
       description: 'Klantenverloop analyse voor een muziek streaming platform. Reductie van klantverloop via gedragsanalyse van 10.000+ gebruikers. Interactief Streamlit dashboard online beschikbaar.',
       tags: ['Python', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Streamlit'],
       github: 'https://github.com/Proftg/maven_music_streamlit-app',
@@ -212,7 +212,7 @@ const projects: Record<string, Project[]> = {
       github: 'https://github.com/Proftg/Bank-Customer-Data-Prep',
     },
     {
-      title: 'Le Wagon — Bordspel Populariteitsanalyse',
+      title: 'Le Wagon : Bordspel Populariteitsanalyse',
       description: 'Eindproject voor Le Wagon Data Science & AI bootcamp (400+ uur). Voorspellende modellering van bordspelpopulariteit uit 20.000+ BGG-records verrijkt via REST API. Feature engineering, kruisvalidatie en Streamlit deployment.',
       tags: ['Python', 'Scikit-learn', 'NumPy', 'Seaborn', 'API REST', 'Streamlit'],
       github: 'https://github.com/Proftg/BGG-Project---Board-Game-Analysis',
