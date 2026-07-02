@@ -63,9 +63,16 @@ const projects: Record<string, Project[]> = {
     },
     {
       title: 'Financial RAG Agent : Agentic AI on Risk Data',
-      description: 'ReAct agent built with LangGraph that answers questions about financial risk data in French and English. Two tools: semantic document search (ChromaDB + sentence-transformers) and SQL queries on 30,000 scored clients. LLM: Groq Llama 3.3 70B. Streamlit interface with example questions. GIF demo in repository.',
-      tags: ['Python', 'LangChain', 'LangGraph', 'ChromaDB', 'Groq', 'RAG', 'GenAI', 'Streamlit'],
+      description: 'ReAct agent built with LangGraph that answers questions about financial risk data in French and English. Two tools: semantic document search (ChromaDB + sentence-transformers) and SQL queries on 30,000 scored clients. LLM: Groq Llama 3.3 70B. Adds a governed semantic cache (separate ChromaDB collection) with human-in-the-loop validation to prevent cache poisoning, plus OKF metadata for traceable citations. Streamlit interface with example questions.',
+      tags: ['Python', 'LangGraph', 'ChromaDB', 'Groq', 'RAG', 'GenAI', 'Data Governance', 'Streamlit'],
       github: 'https://github.com/Proftg/rag-finance-agent',
+      featured: true,
+    },
+    {
+      title: 'Football AI : Computer Vision Match Analytics',
+      description: 'Computer vision pipeline that analyzes any football match video. Player, referee and ball detection (YOLOv8), ByteTrack tracking, automatic team classification learned per video (SigLIP embeddings + UMAP + KMeans), and a 2D tactical radar built from per-frame pitch homography (32 keypoints). Analytics layer computes real-world stats from projected positions: distance covered, average speed and ball possession per team, exported to CSV.',
+      tags: ['Python', 'YOLOv8', 'Computer Vision', 'ByteTrack', 'SigLIP', 'KMeans', 'OpenCV'],
+      github: 'https://github.com/Proftg/football-ai',
       featured: true,
     },
     {
@@ -145,9 +152,16 @@ const projects: Record<string, Project[]> = {
     },
     {
       title: 'Financial RAG Agent : Agent IA sur Données Financières',
-      description: 'Agent ReAct construit avec LangGraph qui répond aux questions sur des données de risque financier en français et en anglais. Deux outils : recherche sémantique de documents (ChromaDB + sentence-transformers) et requêtes SQL sur 30 000 clients scorés. LLM : Groq Llama 3.3 70B. Interface Streamlit avec questions d\'exemple. GIF demo dans le dépôt.',
-      tags: ['Python', 'LangChain', 'LangGraph', 'ChromaDB', 'Groq', 'RAG', 'GenAI', 'Streamlit'],
+      description: 'Agent ReAct construit avec LangGraph qui répond aux questions sur des données de risque financier en français et en anglais. Deux outils : recherche sémantique de documents (ChromaDB + sentence-transformers) et requêtes SQL sur 30 000 clients scorés. LLM : Groq Llama 3.3 70B. Ajoute un cache sémantique gouverné (collection ChromaDB séparée) avec validation humaine contre l\'empoisonnement du cache, et des métadonnées OKF pour des citations traçables. Interface Streamlit avec questions d\'exemple.',
+      tags: ['Python', 'LangGraph', 'ChromaDB', 'Groq', 'RAG', 'GenAI', 'Data Governance', 'Streamlit'],
       github: 'https://github.com/Proftg/rag-finance-agent',
+      featured: true,
+    },
+    {
+      title: 'Football AI : Analyse Vidéo par Computer Vision',
+      description: 'Pipeline de computer vision qui analyse n\'importe quelle vidéo de match de football. Détection joueurs, arbitres et ballon (YOLOv8), tracking ByteTrack, classification automatique des équipes apprise sur chaque vidéo (embeddings SigLIP + UMAP + KMeans), et radar tactique 2D construit par homographie du terrain recalculée à chaque frame (32 keypoints). Couche analytique : distances parcourues, vitesses moyennes et possession par équipe calculées en mètres réels, exportées en CSV.',
+      tags: ['Python', 'YOLOv8', 'Computer Vision', 'ByteTrack', 'SigLIP', 'KMeans', 'OpenCV'],
+      github: 'https://github.com/Proftg/football-ai',
       featured: true,
     },
     {
@@ -227,9 +241,16 @@ const projects: Record<string, Project[]> = {
     },
     {
       title: 'Financial RAG Agent : Agentische AI op Financiële Data',
-      description: 'ReAct-agent gebouwd met LangGraph die vragen beantwoordt over financiële risicodata in het Frans en Engels. Twee tools: semantisch documentzoeken (ChromaDB + sentence-transformers) en SQL-queries op 30.000 gescoorde klanten. LLM: Groq Llama 3.3 70B. Streamlit-interface met voorbeeldvragen. GIF-demo in de repository.',
-      tags: ['Python', 'LangChain', 'LangGraph', 'ChromaDB', 'Groq', 'RAG', 'GenAI', 'Streamlit'],
+      description: 'ReAct-agent gebouwd met LangGraph die vragen beantwoordt over financiële risicodata in het Frans en Engels. Twee tools: semantisch documentzoeken (ChromaDB + sentence-transformers) en SQL-queries op 30.000 gescoorde klanten. LLM: Groq Llama 3.3 70B. Voegt een beheerde semantische cache toe (aparte ChromaDB-collectie) met menselijke validatie tegen cache-poisoning, plus OKF-metadata voor traceerbare citaties. Streamlit-interface met voorbeeldvragen.',
+      tags: ['Python', 'LangGraph', 'ChromaDB', 'Groq', 'RAG', 'GenAI', 'Data Governance', 'Streamlit'],
       github: 'https://github.com/Proftg/rag-finance-agent',
+      featured: true,
+    },
+    {
+      title: 'Football AI : Computer Vision Wedstrijdanalyse',
+      description: 'Computer vision pipeline die elke voetbalwedstrijdvideo analyseert. Detectie van spelers, scheidsrechters en bal (YOLOv8), ByteTrack tracking, automatische teamclassificatie per video geleerd (SigLIP embeddings + UMAP + KMeans), en een 2D tactische radar via veldhomografie per frame (32 keypoints). Analyselaag berekent statistieken in echte meters: afgelegde afstand, gemiddelde snelheid en balbezit per team, geëxporteerd naar CSV.',
+      tags: ['Python', 'YOLOv8', 'Computer Vision', 'ByteTrack', 'SigLIP', 'KMeans', 'OpenCV'],
+      github: 'https://github.com/Proftg/football-ai',
       featured: true,
     },
     {
