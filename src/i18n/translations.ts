@@ -17,7 +17,7 @@ export const ui = {
         // Hero
         'hero.greeting': 'Hi, I\'m',
         'hero.name': 'Tahar Guenfoud',
-        'hero.title': 'Data Analyst & Data Scientist',
+        'hero.title': 'AI Engineer & Data Scientist',
         'hero.subtitle': 'Transforming raw data into actionable insights & compelling stories.',
         'hero.description': 'A decade of IT education expertise combined with a Master\'s in Computer Science and intensive Data Science training. I bridge the gap between complex data and clear, impactful decision-making.',
         'hero.cta.projects': 'View Projects',
@@ -46,7 +46,7 @@ export const ui = {
         // Skills
         'skills.title': 'Technical Skills',
         'skills.languages': 'Languages & Data',
-        'skills.ml': 'Machine Learning',
+        'skills.ml': 'Machine Learning & AI',
         'skills.viz': 'Visualization & BI',
         'skills.cloud': 'Cloud & Infrastructure',
 
@@ -86,7 +86,7 @@ export const ui = {
         // Hero
         'hero.greeting': 'Bonjour, je suis',
         'hero.name': 'Tahar Guenfoud',
-        'hero.title': 'Data Analyst & Data Scientist',
+        'hero.title': 'AI Engineer & Data Scientist',
         'hero.subtitle': 'Transformer les données brutes en insights actionnables et en histoires captivantes.',
         'hero.description': 'Une décennie d\'expertise en enseignement informatique, complétée par un Master en Sciences Informatiques et une formation intensive en Data Science. Je fais le pont entre les données complexes et la prise de décision claire et impactante.',
         'hero.cta.projects': 'Voir les projets',
@@ -115,7 +115,7 @@ export const ui = {
         // Skills
         'skills.title': 'Compétences techniques',
         'skills.languages': 'Langages & Data',
-        'skills.ml': 'Machine Learning',
+        'skills.ml': 'Machine Learning & AI',
         'skills.viz': 'Visualisation & BI',
         'skills.cloud': 'Cloud & Infrastructure',
 
@@ -155,7 +155,7 @@ export const ui = {
         // Hero
         'hero.greeting': 'Hallo, ik ben',
         'hero.name': 'Tahar Guenfoud',
-        'hero.title': 'Data Analyst & Data Scientist',
+        'hero.title': 'AI Engineer & Data Scientist',
         'hero.subtitle': 'Ruwe data omzetten in bruikbare inzichten en boeiende verhalen.',
         'hero.description': 'Een decennium expertise in IT-onderwijs, aangevuld met een Master in Informatica en een intensieve Data Science opleiding. Ik overbrug de kloof tussen complexe data en duidelijke, impactvolle besluitvorming.',
         'hero.cta.projects': 'Projecten bekijken',
@@ -184,7 +184,7 @@ export const ui = {
         // Skills
         'skills.title': 'Technische vaardigheden',
         'skills.languages': 'Talen & Data',
-        'skills.ml': 'Machine Learning',
+        'skills.ml': 'Machine Learning & AI',
         'skills.viz': 'Visualisatie & BI',
         'skills.cloud': 'Cloud & Infrastructuur',
 
