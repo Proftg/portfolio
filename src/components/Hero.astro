@@ -26,7 +26,7 @@ const t = useTranslations(lang);
     <div class="hero-ctas">
       <a href={getLocalizedPath(lang, '/portfolio/#projects')} class="btn btn-outline">{t('hero.cta.projects')} →</a>
       <a href={getLocalizedPath(lang, '/portfolio/#contact')} class="btn btn-primary">{t('hero.cta.contact')}</a>
-      <a href="/portfolio/cv/CV_Tahar_Guenfoud.pdf" download class="btn btn-outline">{t('hero.cta.cv')}</a>
+      <a href={`/portfolio/cv/CV_Tahar_Guenfoud_${lang.toUpperCase()}.pdf`} download class="btn btn-outline">{t('hero.cta.cv')}</a>
     </div>
     <p class="hero-location">{t('hero.location')}</p>
     <a href={getLocalizedPath(lang, '/portfolio/#projects')} class="hero-arrow" aria-label="Scroll">
