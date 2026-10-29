@@ -56,7 +56,7 @@ export const ui = {
 
         // About
         'about.title': 'About Me',
-        'about.bio': 'When I\'m not crunching data, you\'ll find me training for my next triathlon 🏊🚴🏃. I believe that the discipline and analytical thinking required in sports directly translates to my approach in data science.',
+        'about.bio': 'When I\'m not crunching data, you\'ll find me training for my next triathlon. I believe that the discipline and analytical thinking required in sports directly translates to my approach in data science.',
         'about.languages': 'Languages',
         'about.languages.ar': 'Arabic : Native',
         'about.languages.fr': 'French : Bilingual',
@@ -125,7 +125,7 @@ export const ui = {
 
         // About
         'about.title': 'À propos',
-        'about.bio': 'Quand je ne suis pas plongé dans les données, vous me trouverez en train de m\'entraîner pour mon prochain triathlon 🏊🚴🏃. Je crois que la discipline et la pensée analytique requises dans le sport se traduisent directement dans mon approche en data science.',
+        'about.bio': 'Quand je ne suis pas plongé dans les données, vous me trouverez en train de m\'entraîner pour mon prochain triathlon. Je crois que la discipline et la pensée analytique requises dans le sport se traduisent directement dans mon approche en data science.',
         'about.languages': 'Langues',
         'about.languages.ar': 'Arabe : Langue maternelle',
         'about.languages.fr': 'Français : Bilingue',
@@ -194,7 +194,7 @@ export const ui = {
 
         // About
         'about.title': 'Over mij',
-        'about.bio': 'Als ik niet met data bezig ben, train ik voor mijn volgende triatlon 🏊🚴🏃. Ik geloof dat de discipline en het analytisch denken die nodig zijn in sport zich direct vertalen naar mijn aanpak in data science.',
+        'about.bio': 'Als ik niet met data bezig ben, train ik voor mijn volgende triatlon. Ik geloof dat de discipline en het analytisch denken die nodig zijn in sport zich direct vertalen naar mijn aanpak in data science.',
         'about.languages': 'Talen',
         'about.languages.ar': 'Arabisch : Moedertaal',
         'about.languages.fr': 'Frans : Tweetalig',

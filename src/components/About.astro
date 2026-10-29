@@ -11,16 +11,11 @@ const t = useTranslations(lang);
       <h2 class="section-title">{t('about.title')}</h2>
     </div>
 
-    <div style="max-width: 700px; margin: 0 auto; text-align: center;" class="animate-on-scroll">
-      <p style="font-size: var(--font-size-lg); color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--space-8);">
-        {t('about.bio')}
-      </p>
-
-      <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--space-6); color: var(--color-text-primary);">
-        {t('about.languages')}
-      </h3>
-
-      <div style="display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center;">
+    <div class="about animate-on-scroll">
+      <img src="/portfolio/images/photo.jpg" alt="Tahar Guenfoud" class="about-photo" />
+      <p>{t('about.bio')}</p>
+      <h3>{t('about.languages')}</h3>
+      <div class="skills-list">
         <span class="skill-item">{t('about.languages.fr')}</span>
         <span class="skill-item">{t('about.languages.en')}</span>
         <span class="skill-item">{t('about.languages.ar')}</span>
