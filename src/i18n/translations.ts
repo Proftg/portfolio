@@ -17,7 +17,7 @@ export const ui = {
         // Hero
         'hero.greeting': 'Hi, I\'m',
         'hero.name': 'Tahar Guenfoud',
-        'hero.title': 'AI Engineer & Data Scientist',
+        'hero.title': 'AI Engineer, Data Scientist & Data Analyst',
         'hero.subtitle': 'Transforming raw data into actionable insights & compelling stories.',
         'hero.description': 'A decade of IT education expertise combined with a Master\'s in Computer Science and intensive Data Science training. I bridge the gap between complex data and clear, impactful decision-making.',
         'hero.cta.projects': 'View Projects',
@@ -86,7 +86,7 @@ export const ui = {
         // Hero
         'hero.greeting': 'Bonjour, je suis',
         'hero.name': 'Tahar Guenfoud',
-        'hero.title': 'AI Engineer & Data Scientist',
+        'hero.title': 'AI Engineer, Data Scientist & Data Analyst',
         'hero.subtitle': 'Transformer les données brutes en insights actionnables et en histoires captivantes.',
         'hero.description': 'Une décennie d\'expertise en enseignement informatique, complétée par un Master en Sciences Informatiques et une formation intensive en Data Science. Je fais le pont entre les données complexes et la prise de décision claire et impactante.',
         'hero.cta.projects': 'Voir les projets',
@@ -155,7 +155,7 @@ export const ui = {
         // Hero
         'hero.greeting': 'Hallo, ik ben',
         'hero.name': 'Tahar Guenfoud',
-        'hero.title': 'AI Engineer & Data Scientist',
+        'hero.title': 'AI Engineer, Data Scientist & Data Analyst',
         'hero.subtitle': 'Ruwe data omzetten in bruikbare inzichten en boeiende verhalen.',
         'hero.description': 'Een decennium expertise in IT-onderwijs, aangevuld met een Master in Informatica en een intensieve Data Science opleiding. Ik overbrug de kloof tussen complexe data en duidelijke, impactvolle besluitvorming.',
         'hero.cta.projects': 'Projecten bekijken',
